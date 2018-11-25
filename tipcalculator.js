@@ -41,3 +41,19 @@ const bills = {
     }
   }
 };
+
+const markBills = [77, 375, 110, 45];
+function tipCalculator(array) {
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    let amount = array[i];
+    if (amount < 100) {
+      result.push(amount * 0.2);
+    } else if (amount >= 100 && amount <= 300) {
+      result.push(amount * 0.1);
+    } else {
+      result.push(amount * 0.25);
+    }
+  }
+  return result;
+}
