@@ -1,3 +1,6 @@
+console.log(
+  "type john or mark to see their properties, calculate their BMI by typing name.calcBMI()"
+);
 const mark = {
   name: "Mark",
   mass: 72,
@@ -17,7 +20,7 @@ const john = {
   }
 };
 
-if (john.BMI > mark.BMI) {
+if (john.calcBMI() > mark.calcBMI()) {
   return `${john.name} has a higher BMI`;
 } else {
   return `${mark.name} has a higher BMI`;
