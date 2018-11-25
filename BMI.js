@@ -16,3 +16,9 @@ const john = {
     return this.BMI;
   }
 };
+
+if (john.BMI > mark.BMI) {
+  return `${john.name} has a higher BMI`;
+} else {
+  return `${mark.name} has a higher BMI`;
+}
